@@ -1,0 +1,124 @@
+/*
+    This .css file is made by Soybeanman(TwitterID : @Soybeanman504).
+    The original source exists in https://github.com/Soybeanman504/patapata
+*/
+
+.patapata {
+    position: relative;
+    width: 120px;
+    height: 50px;
+    margin: 0;
+}
+
+
+.patapata>div {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    display: table;
+    margin: 0;
+    overflow: hidden;
+
+    background-color: #333333;
+    box-sizing: border-box;
+}
+
+.patapata-main {
+    top: 0;
+    height: 100%;
+    z-index: 10;
+    user-select: none;
+    
+    border-radius: 5px;
+}
+
+.patapata-top {
+    top: 0;
+    height: 50%;
+    user-select: none;
+
+    border-radius: 5px 5px 0 0;
+    
+    transform-origin: bottom;
+    animation-timing-function: ease-in;
+}
+
+.patapata-bottom {
+    top: 50%;
+    height: 50%;
+    user-select: none;
+
+    border-radius: 0 0 5px 5px;
+
+    transform-origin: top;
+    animation-timing-function: ease-out;
+}
+
+
+
+.patapata-text {
+    display: table-cell;
+    position: absolute;
+    left: 0;
+    width: 100%;
+}
+
+.patapata-main>.patapata-text {
+    height: 100%;
+}
+
+.patapata-top>.patapata-text {
+    height: 200%;
+}
+
+.patapata-bottom>.patapata-text {
+    top: -100%;
+    height: 200%;
+}
+
+
+
+.patapata-text>p {
+    position: relative;
+    font-size: 40px;
+    color: honeydew;
+    text-align: center;
+    margin: 5px 0;
+}
+
+
+@keyframes patapata-smaller {
+    0% {
+        background-color: #444444;
+
+        transform: scaleY(1);
+    }
+
+    50% {
+        background-color: #000000;
+
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(0);
+    }
+}
+
+@keyframes patapata-bigger {
+    0% {
+        transform: scaleY(0);
+    }
+
+    50% {
+        background-color: #888888;
+
+        transform: scaleY(0);
+    }
+
+    100% {
+        background-color: #222222;
+
+        transform: scaleY(1);
+    }
+}
