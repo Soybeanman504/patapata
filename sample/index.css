@@ -1,0 +1,21 @@
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#keikyu {
+    width: 300px;
+    margin: auto;
+}
+
+#text {
+    text-align: center;
+}
