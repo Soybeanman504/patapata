@@ -15,7 +15,6 @@
     position: absolute;
     left: 0;
     width: 100%;
-    display: table;
     margin: 0;
     overflow: hidden;
 
@@ -57,10 +56,13 @@
 
 
 .patapata-text {
-    display: table-cell;
     position: absolute;
     left: 0;
     width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .patapata-main>.patapata-text {
@@ -82,8 +84,6 @@
     position: relative;
     font-size: 40px;
     color: honeydew;
-    text-align: center;
-    margin: 5px 0;
 }
 
 
