@@ -41,7 +41,7 @@ class Patapata {
 
             pText.innerText = text;
             pText.style.fontSize = (parent.clientHeight * 0.8) + 'px';
-            pText.style.margin = (parent.clientHeight * 0.1) + 'px 0'
+            pText.style.height = (parent.clientHeight * 0.8) + 'px';
 
             divText.className = 'patapata-text';
             divText.appendChild(pText);
